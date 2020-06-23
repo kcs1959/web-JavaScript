@@ -1,4 +1,0 @@
-# JavaScript
-## JavaScriptとは？
-## リスト
-### あ
