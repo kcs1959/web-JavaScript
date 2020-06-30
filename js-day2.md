@@ -101,4 +101,20 @@ btn.addEventListener("click", function () {
 ```
 ### ボタンを何回押しても紫っぽい色が出るはず
 
-## 
+## 乱数を作る関数の理解
+```javascript
+const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];
+const btn = document.getElementById("btn");
+const color = document.querySelector(".color");
+
+btn.addEventListener("click",function(){   
+    const randomNumber = getRandomNumber();
+    console.log(randomNumber);
+    document.body.style.backgroundColor = colors[randomNumber];
+    color.textContent = colors[randomNumber];
+});
+
+function getRandomNumber(){
+    return Math.random();
+}
+```
