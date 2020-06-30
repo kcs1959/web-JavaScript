@@ -84,7 +84,7 @@ const color = document.querySelector(".color");
 
 btn.addEventListener("click", function () {
   console.log(2+3);
-}
+});
 ```
 
 ## 一旦randomnumberを固定
