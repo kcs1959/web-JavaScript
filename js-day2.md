@@ -66,3 +66,21 @@
   </body>
 </html>
 ```
+
+## 次に、app.jsを以下の状態に書き換えましょう
+```javascript
+const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];
+const btn = document.getElementById("btn");
+const color = document.querySelector(".color");
+```
+
+## しばらくはapp.jsを変えていきます
+
+## addEventListenerの理解
+```javascript
+btn.addEventListener("click", function () {
+  console.log(2+3);
+}
+```
+
+## 
