@@ -119,7 +119,7 @@ function getRandomNumber(){
 }
 ```
 
-## 0から4までの乱数を作り、整数に直すことで、app.jsの完成へ
+## 0から4までの乱数を作り、整数に直すことで4種類の色を表示させ、app.jsの完成へ
 ```javascript
 const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];
 const btn = document.getElementById("btn");
@@ -137,7 +137,7 @@ function getRandomNumber() {
   return Math.floor(Math.random() * colors.length);
 }
 ```
-## app.jsは終わり、次はhex.jsへ
+## app.jsが完成したので、次はhex.jsへ
 
 ## hex.jsを以下の状態に書き換えましょう
 ```javascript
@@ -146,7 +146,7 @@ const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
 ```
 
-## for文の練習
+## for文の理解
 ```javascript
 const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 const btn = document.getElementById("btn");
@@ -161,4 +161,26 @@ btn.addEventListener("click", function () {
   color.textContent = hexColor;
   document.body.style.backgroundColor = hexColor;
 });
+```
+
+## 乱数を使ってランダムな色を表示させ、hex.jsの完成へ
+```javascript
+const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+const btn = document.getElementById("btn");
+const color = document.querySelector(".color");
+
+btn.addEventListener("click", function () {
+  let hexColor = "#";
+  for (let i = 0; i < 6; i++) {
+    hexColor += hex[getRandomNumber()];
+  }
+  // console.log(hexColor);
+
+  color.textContent = hexColor;
+  document.body.style.backgroundColor = hexColor;
+});
+
+function getRandomNumber() {
+  return Math.floor(Math.random() * hex.length);
+}
 ```
