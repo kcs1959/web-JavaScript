@@ -1,3 +1,5 @@
+# JavaScript講習会第2回
+
 ## まずindex.htmlを以下の状態に書き換えましょう
 ``` HTML
 <!DOCTYPE html>
