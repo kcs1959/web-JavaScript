@@ -1,6 +1,6 @@
 # JavaScript講習会第2回
 
-## まずindex.htmlを以下の状態に書き換えましょう
+## まず、index.htmlを以下の状態に書き換えましょう
 ``` HTML
 <!DOCTYPE html>
 <html lang="en">
@@ -67,7 +67,7 @@
 </html>
 ```
 
-## 次に、app.jsを以下の状態に書き換えましょう
+## さらに、app.jsを以下の状態に書き換えましょう
 ```javascript
 const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];
 const btn = document.getElementById("btn");
